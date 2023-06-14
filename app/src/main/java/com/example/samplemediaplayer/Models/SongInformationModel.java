@@ -1,7 +1,7 @@
-package com.example.samplemediaplayer.model;
+package com.example.samplemediaplayer.Models;
 
 public class SongInformationModel {
-    String _id;
+    Long _id;
     String directory;
     String title;
     String artist;
@@ -13,7 +13,7 @@ public class SongInformationModel {
     String mime_type;
     Long size;
 
-    public SongInformationModel(String _id, String directory, String title, String artist,
+    public SongInformationModel(Long _id, String directory, String title, String artist,
                               String album, String genre, String year, Long duration,
                               String track, String mime_type, Long size)
     {
@@ -30,7 +30,7 @@ public class SongInformationModel {
         this.size = size;
     }
 
-    public String getId() {
+    public Long getId() {
         return _id;
     }
 

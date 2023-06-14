@@ -1,4 +1,4 @@
-package com.example.samplemediaplayer.view;
+package com.example.samplemediaplayer.Views;
 
 import android.os.Bundle;
 

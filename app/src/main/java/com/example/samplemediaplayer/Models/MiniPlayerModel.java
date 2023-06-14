@@ -1,18 +1,18 @@
-package com.example.samplemediaplayer.model;
+package com.example.samplemediaplayer.Models;
 
 import android.graphics.Bitmap;
 
 public class MiniPlayerModel {
-    String _id;
+    Long _id;
     Bitmap albumArt;
 
-    public MiniPlayerModel(String _id, Bitmap albumArt)
+    public MiniPlayerModel(Long _id, Bitmap albumArt)
     {
         this._id = _id;
         this.albumArt = albumArt;
     }
 
-    public String getId() {
+    public Long getId() {
         return _id;
     }
 

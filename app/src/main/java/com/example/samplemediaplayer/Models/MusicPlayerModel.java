@@ -1,15 +1,15 @@
-package com.example.samplemediaplayer.model;
+package com.example.samplemediaplayer.Models;
 
 import android.graphics.Bitmap;
 
 public class MusicPlayerModel {
-    String _id;
+    Long _id;
     String title;
     String artist;
     Bitmap albumArt;
     Long duration;
 
-    public MusicPlayerModel(String _id, String title, String artist,
+    public MusicPlayerModel(Long _id, String title, String artist,
                               Bitmap albumArt, Long duration)
     {
         this._id = _id;
@@ -19,7 +19,7 @@ public class MusicPlayerModel {
         this.duration = duration;
     }
 
-    public String getId() {
+    public Long getId() {
         return _id;
     }
 

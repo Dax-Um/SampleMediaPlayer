@@ -1,4 +1,4 @@
-package com.example.samplemediaplayer.viewModel;
+package com.example.samplemediaplayer.ViewModels;
 
 import androidx.lifecycle.ViewModel;
 
