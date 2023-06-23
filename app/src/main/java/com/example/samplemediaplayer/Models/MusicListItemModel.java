@@ -1,22 +1,28 @@
 package com.example.samplemediaplayer.Models;
 
-import android.graphics.Bitmap;
-
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+@Entity
 public class MusicListItemModel {
-    Long _id;
-    String title;
-    String artist;
-    Bitmap albumArt;
+    @PrimaryKey
+    public int _id;
+    @ColumnInfo(name = "title")
+    public String title;
+    @ColumnInfo(name = "artist")
+    public String artist;
+    @ColumnInfo(name = "album_id")
+    public Long album_id;
 
-    public MusicListItemModel(Long _id, String title, String artist, Bitmap albumArt)
+    public MusicListItemModel(Integer _id, String title, String artist, Long album_id)
     {
         this._id = _id;
         this.title = title;
         this.artist = artist;
-        this.albumArt = albumArt;
+        this.album_id = album_id;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return _id;
     }
 
@@ -28,8 +34,8 @@ public class MusicListItemModel {
         return artist;
     }
 
-    public Bitmap getAlbumArt() {
-        return albumArt;
+    public Long getAlbumId() {
+        return album_id;
     }
 }
 
