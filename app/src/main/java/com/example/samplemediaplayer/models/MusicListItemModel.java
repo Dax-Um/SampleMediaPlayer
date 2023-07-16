@@ -1,8 +1,13 @@
-package com.example.samplemediaplayer.Models;
+package com.example.samplemediaplayer.models;
+
+import android.graphics.Bitmap;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+
+import com.example.samplemediaplayer.utils.DataUtil;
+
 @Entity
 public class MusicListItemModel {
     @PrimaryKey
@@ -13,13 +18,16 @@ public class MusicListItemModel {
     public String artist;
     @ColumnInfo(name = "album_id")
     public Long album_id;
+    @ColumnInfo(name = "data")
+    public String file_path;
 
-    public MusicListItemModel(Integer _id, String title, String artist, Long album_id)
+    public MusicListItemModel(Integer _id, String title, String artist, Long album_id, String file_path)
     {
         this._id = _id;
         this.title = title;
         this.artist = artist;
         this.album_id = album_id;
+        this.file_path = file_path;
     }
 
     public Integer getId() {
@@ -37,5 +45,7 @@ public class MusicListItemModel {
     public Long getAlbumId() {
         return album_id;
     }
+
+    public String getFile_path() {return file_path;}
 }
 

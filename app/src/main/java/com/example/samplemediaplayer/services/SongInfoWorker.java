@@ -1,4 +1,4 @@
-package com.example.samplemediaplayer.Services;
+package com.example.samplemediaplayer.services;
 
 import android.content.ContentUris;
 import android.content.Context;

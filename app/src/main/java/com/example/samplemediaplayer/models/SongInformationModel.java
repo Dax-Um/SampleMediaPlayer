@@ -1,4 +1,4 @@
-package com.example.samplemediaplayer.Models;
+package com.example.samplemediaplayer.models;
 
 public class SongInformationModel {
     Integer _id;
